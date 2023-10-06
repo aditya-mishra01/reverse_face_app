@@ -29,7 +29,6 @@ opencv-python
 openpyxl
 overrides
 packaging
-pandas
 pandocfilters
 parso
 pickleshare
