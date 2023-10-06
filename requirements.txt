@@ -44,7 +44,6 @@ pyparsing
 python-dateutil
 python-json-logger
 pytz
-pywinpty
 PyYAML
 pyzmq
 qtconsole
@@ -54,8 +53,6 @@ requests
 rfc3339-validator
 rfc3986-validator
 rpds-py
-scikit-learn
-scipy
 seaborn
 Send2Trash
 six
