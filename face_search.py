@@ -10,37 +10,38 @@ from face import get_faces
 def get_info(video):
     urls_main=[]
     faces=get_faces(video)
-    api_key = "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"
+    api_key = "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"
     openai.api_key = api_key
 
     cookies = {
-        'payment_gateway_new': 'transactioncloud',
-        'ab_test_cookie_new': 'control_group_child_search_block_a_26_09',
-        'remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d': 'eyJpdiI6ImRBT0NZbFJGazY0ek03WmhIVkN2M3c9PSIsInZhbHVlIjoiNENBaHlybXpCRFV0d21UbTkvRG5WRFNwWVRTbm5rWEhhenVIVzY3anlnc2VQMHFpRW4rY256OFo1TXJpdkJDbDNZb0wwTlNoSkZ4TjVYVlhmNzg0TnFIVXl1anVVWUJMLzVNUENyZnRtTlc1UVN0akRYZERkRGxxam1PRG1FWlU5UkVRNHpXbkUzcU1sL1Q2MDBNM0ptT1Q1T2cvYTdQbWVkTEZWT0pyOTh6ZllrNmJ3eUdiYk5tOVlIQVpHT2xHdnJ0Yzg3Nm4yTE1KR2RESWVCM3hJMW5jcjR1TW1GN0RJR0JKY0h2R1VHWT0iLCJtYWMiOiI2ZDVhY2M5ODliZjU5ZTY4NmU1ZjkxN2FhZmVlMThkZTM1NTViOTVlODQ0MWMxMDgzNjJiYjhjOTJiMzIxZDViIiwidGFnIjoiIn0%3D',
-        'uploadPermissions': '1696499556181',
-        'XSRF-TOKEN': 'eyJpdiI6ImZtNnFsMld2OVJlekdoSnFVNkNWTVE9PSIsInZhbHVlIjoib3QzZkVrZjdpR0JVOTJubGJtUmNsQTNWRXFBT1ZtNnY2MGpqd283OTJTY2R2TERKZDNtTzZvajdJV04vRjJ1WmJkZUhqRWtnTVlESkN0a3lwdGtoQ0cweVA4Z0lzL0VDZHVGSzVnYTl6Z2M3NGM2MkJXak93SDZOcnpUY0lHVDIiLCJtYWMiOiJkM2U4MTcwZjE4ZWEzOGUyNThhOGYwNmFkOTAxYjEzZTY5ZGI4ZTRkYTNlM2ExOTk0ZGVjOGI1ZDBhOWE3NjUxIiwidGFnIjoiIn0%3D',
-        'pimeyes_session': 'eyJpdiI6IjBYUlMxdjdXeWFJRHBHaElLenFYQXc9PSIsInZhbHVlIjoiMEVrdTBWc1RYQmtvNmNzbTRUejQ0cU5QVkZ4MTAxYUs2NWJZeVdhOUZSUjF0aEtBeVZFUERyVVlTenVUSE5qYVR3MEpteEtvYmEvbk1Ga3NOVWpra252cHdzbTIwVWcwUXI4WGZmM0lVKy9iWk01czBnSlREeDhnbkZyL1pTWDUiLCJtYWMiOiI2ODUxYjA2ZWNmZGQwNTdkZTQzYTgyMzQxZmMzNmExOWI0ZTRmNzhhYmZhZDE2ZTJjMzhjNmJmMDc5ODhiZGExIiwidGFnIjoiIn0%3D',
+    'payment_gateway_new': 'transactioncloud',
+    'ab_test_cookie_new': 'test_child_search_block_a_26_09',
+    'uploadPermissions': '1696586830711',
+    'XSRF-TOKEN': 'eyJpdiI6IlpsSjhRNzJoa2VMaVUva1plRHByNGc9PSIsInZhbHVlIjoiMklLM0F1Q0k0d2VqQlFaV2FyRWFEYXl1RUsxMjloWE1sZy9yZWZTVEtnRXdSTlJiWEJwVEFhbThMam92cFV2cE1SMnBjeFljMWJMYkN2SWI0cDJrOWtnenB4aFFid0N5VUFaWGlkK2YrMkpaam1Jdm1reDlrbk5ONkhUMlBZZ28iLCJtYWMiOiI0ZmZmNzc0Yjc3ODU4NmM1YTEwZmQwMjNlNjdiOTE2ODE0MzRjNTlkOGUzOWJlYTc0OWY0MWY1ZmI2OTAzMWIyIiwidGFnIjoiIn0%3D',
+    'pimeyes_session': 'eyJpdiI6ImtkQklSbTdaUTdwWERqWXJZTFBZUVE9PSIsInZhbHVlIjoid1pWZzk5ZUJHWDQrcG85eCswcHM5QlRmbjlPaHp0YnNOTWFPMmtlVC84ZmhBb0tOdHhZSEcwYk9Nb1JKcHFYcmpPQ1NTbUROaGxyWCtESTA2Nkx4SjNRekM3NG16dVBlRVFld1dKaXBTUktUdTVnbEphd04zVGI3K3hPUDVXbmwiLCJtYWMiOiIxZjZiMjE5NTA5NzIwYzc0ZTRhZjJiMTA1ZTZkNGFiMTFjY2QwNzgyMjZiYTQ4MjY3MDBkMzM1ZDg4OTUxNjFiIiwidGFnIjoiIn0%3D',
     }
 
     headers = {
-        'authority': 'pimeyes.com',
-        'accept': 'application/json, text/plain, */*',
-        'accept-language': 'en-US,en;q=0.6',
-        'content-type': 'application/json',
-        # 'cookie': 'payment_gateway_new=transactioncloud; ab_test_cookie_new=control_group_child_search_block_a_26_09; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6ImRBT0NZbFJGazY0ek03WmhIVkN2M3c9PSIsInZhbHVlIjoiNENBaHlybXpCRFV0d21UbTkvRG5WRFNwWVRTbm5rWEhhenVIVzY3anlnc2VQMHFpRW4rY256OFo1TXJpdkJDbDNZb0wwTlNoSkZ4TjVYVlhmNzg0TnFIVXl1anVVWUJMLzVNUENyZnRtTlc1UVN0akRYZERkRGxxam1PRG1FWlU5UkVRNHpXbkUzcU1sL1Q2MDBNM0ptT1Q1T2cvYTdQbWVkTEZWT0pyOTh6ZllrNmJ3eUdiYk5tOVlIQVpHT2xHdnJ0Yzg3Nm4yTE1KR2RESWVCM3hJMW5jcjR1TW1GN0RJR0JKY0h2R1VHWT0iLCJtYWMiOiI2ZDVhY2M5ODliZjU5ZTY4NmU1ZjkxN2FhZmVlMThkZTM1NTViOTVlODQ0MWMxMDgzNjJiYjhjOTJiMzIxZDViIiwidGFnIjoiIn0%3D; uploadPermissions=1696499556181; XSRF-TOKEN=eyJpdiI6ImZtNnFsMld2OVJlekdoSnFVNkNWTVE9PSIsInZhbHVlIjoib3QzZkVrZjdpR0JVOTJubGJtUmNsQTNWRXFBT1ZtNnY2MGpqd283OTJTY2R2TERKZDNtTzZvajdJV04vRjJ1WmJkZUhqRWtnTVlESkN0a3lwdGtoQ0cweVA4Z0lzL0VDZHVGSzVnYTl6Z2M3NGM2MkJXak93SDZOcnpUY0lHVDIiLCJtYWMiOiJkM2U4MTcwZjE4ZWEzOGUyNThhOGYwNmFkOTAxYjEzZTY5ZGI4ZTRkYTNlM2ExOTk0ZGVjOGI1ZDBhOWE3NjUxIiwidGFnIjoiIn0%3D; pimeyes_session=eyJpdiI6IjBYUlMxdjdXeWFJRHBHaElLenFYQXc9PSIsInZhbHVlIjoiMEVrdTBWc1RYQmtvNmNzbTRUejQ0cU5QVkZ4MTAxYUs2NWJZeVdhOUZSUjF0aEtBeVZFUERyVVlTenVUSE5qYVR3MEpteEtvYmEvbk1Ga3NOVWpra252cHdzbTIwVWcwUXI4WGZmM0lVKy9iWk01czBnSlREeDhnbkZyL1pTWDUiLCJtYWMiOiI2ODUxYjA2ZWNmZGQwNTdkZTQzYTgyMzQxZmMzNmExOWI0ZTRmNzhhYmZhZDE2ZTJjMzhjNmJmMDc5ODhiZGExIiwidGFnIjoiIn0%3D',
-        'origin': 'https://pimeyes.com',
-        'referer': 'https://pimeyes.com/en',
-        'sec-ch-ua': '"Brave";v="117", "Not;A=Brand";v="8", "Chromium";v="117"',
-        'sec-ch-ua-mobile': '?0',
-        'sec-ch-ua-platform': '"Windows"',
-        'sec-fetch-dest': 'empty',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-site': 'same-origin',
-        'sec-gpc': '1',
-        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36',
-        'x-user-id': '45fe33d669359dc662990a21ede33077',
-        'x-xsrf-token': 'eyJpdiI6ImZtNnFsMld2OVJlekdoSnFVNkNWTVE9PSIsInZhbHVlIjoib3QzZkVrZjdpR0JVOTJubGJtUmNsQTNWRXFBT1ZtNnY2MGpqd283OTJTY2R2TERKZDNtTzZvajdJV04vRjJ1WmJkZUhqRWtnTVlESkN0a3lwdGtoQ0cweVA4Z0lzL0VDZHVGSzVnYTl6Z2M3NGM2MkJXak93SDZOcnpUY0lHVDIiLCJtYWMiOiJkM2U4MTcwZjE4ZWEzOGUyNThhOGYwNmFkOTAxYjEzZTY5ZGI4ZTRkYTNlM2ExOTk0ZGVjOGI1ZDBhOWE3NjUxIiwidGFnIjoiIn0=',
-    }
+    'authority': 'pimeyes.com',
+    'accept': 'application/json, text/plain, */*',
+    'accept-language': 'en-US,en;q=0.8',
+    # Already added when you pass json=
+    # 'content-type': 'application/json',
+    # Requests sorts cookies= alphabetically
+    # 'cookie': 'payment_gateway_new=transactioncloud; ab_test_cookie_new=test_child_search_block_a_26_09; uploadPermissions=1696586830711; XSRF-TOKEN=eyJpdiI6IlpsSjhRNzJoa2VMaVUva1plRHByNGc9PSIsInZhbHVlIjoiMklLM0F1Q0k0d2VqQlFaV2FyRWFEYXl1RUsxMjloWE1sZy9yZWZTVEtnRXdSTlJiWEJwVEFhbThMam92cFV2cE1SMnBjeFljMWJMYkN2SWI0cDJrOWtnenB4aFFid0N5VUFaWGlkK2YrMkpaam1Jdm1reDlrbk5ONkhUMlBZZ28iLCJtYWMiOiI0ZmZmNzc0Yjc3ODU4NmM1YTEwZmQwMjNlNjdiOTE2ODE0MzRjNTlkOGUzOWJlYTc0OWY0MWY1ZmI2OTAzMWIyIiwidGFnIjoiIn0%3D; pimeyes_session=eyJpdiI6ImtkQklSbTdaUTdwWERqWXJZTFBZUVE9PSIsInZhbHVlIjoid1pWZzk5ZUJHWDQrcG85eCswcHM5QlRmbjlPaHp0YnNOTWFPMmtlVC84ZmhBb0tOdHhZSEcwYk9Nb1JKcHFYcmpPQ1NTbUROaGxyWCtESTA2Nkx4SjNRekM3NG16dVBlRVFld1dKaXBTUktUdTVnbEphd04zVGI3K3hPUDVXbmwiLCJtYWMiOiIxZjZiMjE5NTA5NzIwYzc0ZTRhZjJiMTA1ZTZkNGFiMTFjY2QwNzgyMjZiYTQ4MjY3MDBkMzM1ZDg4OTUxNjFiIiwidGFnIjoiIn0%3D',
+    'origin': 'https://pimeyes.com',
+    'referer': 'https://pimeyes.com/en',
+    'sec-ch-ua': '"Brave";v="117", "Not;A=Brand";v="8", "Chromium";v="117"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-platform': '"Windows"',
+    'sec-fetch-dest': 'empty',
+    'sec-fetch-mode': 'cors',
+    'sec-fetch-site': 'same-origin',
+    'sec-gpc': '1',
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36',
+    'x-user-id': '5498fe8ef97822b29b12f9e624d64fcf',
+    'x-xsrf-token': 'eyJpdiI6IlpsSjhRNzJoa2VMaVUva1plRHByNGc9PSIsInZhbHVlIjoiMklLM0F1Q0k0d2VqQlFaV2FyRWFEYXl1RUsxMjloWE1sZy9yZWZTVEtnRXdSTlJiWEJwVEFhbThMam92cFV2cE1SMnBjeFljMWJMYkN2SWI0cDJrOWtnenB4aFFid0N5VUFaWGlkK2YrMkpaam1Jdm1reDlrbk5ONkhUMlBZZ28iLCJtYWMiOiI0ZmZmNzc0Yjc3ODU4NmM1YTEwZmQwMjNlNjdiOTE2ODE0MzRjNTlkOGUzOWJlYTc0OWY0MWY1ZmI2OTAzMWIyIiwidGFnIjoiIn0=',
+}
 
 
     
