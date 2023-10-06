@@ -49,7 +49,6 @@ qtconsole
 referencing
 regex
 requests
-rpds-py
 seaborn
 Send2Trash
 six
